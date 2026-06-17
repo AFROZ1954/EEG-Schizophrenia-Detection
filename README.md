@@ -59,5 +59,20 @@ Each EEG recording is processed channel-wise and segmented into epochs for featu
 * Jupyter Notebook
 
 ## Current Status
-
 This repository is under development. I am currently organizing the code, results, and documentation for EEG-based schizophrenia detection.
+## Results
+
+Initial machine learning results using subject-wise cross-validation:
+
+| Model | Accuracy | F1-score | ROC-AUC |
+|---|---:|---:|---:|
+| Logistic Regression | 0.810 | 0.811 | 0.837 |
+| SVM | 0.798 | 0.795 | 0.893 |
+| Random Forest | 0.785 | 0.794 | 0.887 |
+| KNN | 0.762 | 0.723 | 0.874 |
+
+The SVM model achieved the highest ROC-AUC among the tested models.
+
+Detailed results are available in the [`results`](results/model_results.md) file.
+
+
